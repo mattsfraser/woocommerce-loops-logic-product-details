@@ -1,0 +1,31 @@
+<Loop post_type="product" post="current">
+  <ul class="product-details">
+    <If term="pa_vehicle_type" exists>
+      <li><strong>Vehicle Type:</strong> <Term taxonomy="pa_vehicle_type" /></li>
+    </If>
+    <If term="pa_vehicle_body_style" exists>
+      <li><strong>Body Style:</strong> <Term taxonomy="pa_vehicle_body_style" /></li>
+    </If>
+    <If term="pa_fuel_type" exists>
+      <li><strong>Fuel Type:</strong> <Term taxonomy="pa_fuel_type" /></li>
+    </If>
+    <If term="pa_vehicle_make" exists>
+      <li><strong>Manufacturer:</strong> <Term taxonomy="pa_vehicle_make" /></li>
+    </If>
+    <If field="vehicle_model" exists>
+      <li><strong>Model:</strong> <Field vehicle_model /></li>
+    </If>
+    <If term="pa_age_range" exists>
+      <li><strong>Age Range:</strong> <Term taxonomy="pa_age_range" /></li>
+    </If>
+    <If field="top_speed_km" exists>
+      <li><strong>Top Speed:</strong> <Field top_speed_km /> km/h (<Field top_speed_mph /> mph)</li>
+    </If>
+    <If term="pa_warranty" exists>
+      <li><strong>Warranty:</strong> <Term taxonomy="pa_warranty" /></li>
+    </If>
+    <If term="brand-product" exists>
+      <li><strong>Brand:</strong> <Term taxonomy="brand-product" /></li>
+    </If>
+  </ul>
+</Loop>
